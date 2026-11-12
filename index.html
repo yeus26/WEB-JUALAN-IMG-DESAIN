@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desain Grafis Im - Jasa Desain Grafis</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <div class="logo">Desain_<span>Grafis_Im</span></div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#layanan">Layanan</a>
+            <a href="#harga">Harga</a>
+            <a href="#kontak">Kontak</a>
+        </nav>
+
+        <button class="btn-primary" onclick="scrollToServices()">
+            Pesan Sekarang
+        </button>
+    </header>
+
+
+    <!-- HERO -->
+    <section id="home" class="hero">
+
+        <div class="hero-content">
+            <p class="badge">JASA DESAIN PROFESIONAL</p>
+
+            <h1>
+                Hemat waktu anda
+                <span>Gunakan jasa desain</span>
+                kami yang Menarik
+            </h1>
+
+            <p class="hero-description">
+                Kami menyediakan jasa desain grafis profesional untuk
+                kebutuhan bisnis, branding, sosial media, dan personal.
+            </p>
+
+            <div class="hero-buttons">
+                <button class="btn-primary" onclick="scrollToServices()">
+                    Lihat Layanan
+                </button>
+
+                <a href="#kontak" class="btn-secondary">
+                    Hubungi Kami
+                </a>
+            </div>
+        </div>
+
+        <div class="hero-card">
+                <img src="logo desain  web.jpeg">
+        </div>
+
+    </section>
+
+
+    <!-- STATISTIK -->
+    <section class="stats">
+
+        <div>
+            <h2>500+</h2>
+            <p>Proyek Selesai</p>
+        </div>
+
+        <div>
+            <h2>350+</h2>
+            <p>Klien</p>
+        </div>
+
+        <div>
+            <h2>3+</h2>
+            <p>Tahun Pengalaman</p>
+        </div>
+
+        <div>
+            <h2>4.9/5</h2>
+            <p>Rating Klien</p>
+        </div>
+
+    </section>
+
+
+    <!-- LAYANAN -->
+    <section id="layanan" class="section">
+
+        <div class="section-header">
+            <p class="section-label">LAYANAN KAMI</p>
+
+            <h2>
+                Solusi Desain untuk
+                <span>Kebutuhan Anda</span>
+            </h2>
+
+            <p>
+                Pilih layanan desain yang sesuai dengan kebutuhan Anda.
+            </p>
+        </div>
+
+
+        <div class="service-grid">
+
+            <div class="service-card">
+                <div class="service-icon">🎨</div>
+
+                <h3>Desain Logo</h3>
+
+                <p>
+                    Logo profesional dan unik untuk membangun identitas
+                    brand Anda.
+                </p>
+
+                <h4>Mulai Rp50.000</h4>
+
+                <button
+                    class="order-btn"
+                    onclick="openCheckout('Desain Logo', 50000)">
+                    Pesan Sekarang
+                </button>
+            </div>
+
+
+            <div class="service-card featured">
+                <div class="popular">POPULER</div>
+
+                <div class="service-icon">📱</div>
+
+                <h3>Desain Sosial Media</h3>
+
+                <p>
+                    Konten Instagram, Facebook, dan media sosial lainnya
+                    yang menarik.
+                </p>
+
+                <h4>Mulai Rp50.000</h4>
+
+                <button
+                    class="order-btn"
+                    onclick="openCheckout('Desain Sosial Media', 50000)">
+                    Pesan Sekarang
+                </button>
+            </div>
+
+
+            <div class="service-card">
+                <div class="service-icon">📦</div>
+
+                <h3>Desain Kemasan</h3>
+
+                <p>
+                    Kemasan produk yang menarik dan meningkatkan nilai
+                    jual produk Anda.
+                </p>
+
+                <h4>Mulai Rp100.000</h4>
+
+                <button
+                    class="order-btn"
+                    onclick="openCheckout('Desain Kemasan', 100000)">
+                    Pesan Sekarang
+                </button>
+            </div>
+
+
+            <div class="service-card">
+                <div class="service-icon">🖼️</div>
+
+                <h3>Poster & Banner</h3>
+
+                <p>
+                    Poster, banner, flyer, dan berbagai kebutuhan
+                    promosi bisnis.
+                </p>
+
+                <h4>Mulai Rp75.000</h4>
+
+                <button
+                    class="order-btn"
+                    onclick="openCheckout('Poster & Banner', 75000)">
+                    Pesan Sekarang
+                </button>
+            </div>
+
+
+            <div class="service-card">
+                <div class="service-icon">💼</div>
+
+                <h3>Branding</h3>
+
+                <p>
+                    Paket lengkap untuk membangun identitas visual bisnis
+                    Anda.
+                </p>
+
+                <h4>Mulai Rp200.000</h4>
+
+                <button
+                    class="order-btn"
+                    onclick="openCheckout('Branding', 200000)">
+                    Pesan Sekarang
+                </button>
+            </div>
+
+
+            <div class="service-card">
+                <div class="service-icon">✨</div>
+
+                <h3>Desain Custom</h3>
+
+                <p>
+                    Punya keingingan khusus? Diskusikan kebutuhan desain
+                    Anda dengan kami.
+                </p>
+
+                <h4>Mulai Rp100.000</h4>
+
+                <button
+                    class="order-btn"
+                    onclick="openCheckout('Desain Custom', 100000)">
+                    Pesan Sekarang
+                </button>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- HARGA -->
+    <section id="harga" class="pricing-section">
+
+        <div class="section-header">
+            <p class="section-label">PAKET HARGA</p>
+
+            <h2>
+                Pilih Paket
+                <span>Sesuai Kebutuhan</span>
+            </h2>
+        </div>
+
+
+        <div class="pricing-grid">
+
+            <div class="price-card">
+
+                <h3>Basic</h3>
+
+                <div class="price">
+                    Rp150K
+                </div>
+
+                <p>Untuk kebutuhan sederhana.</p>
+
+                <ul>
+                    <li>✓ 1 desain</li>
+                    <li>✓ 2 kali revisi</li>
+                    <li>✓ File JPG & PNG</li>
+                    <li>✓ Pengerjaan 2-3 hari</li>
+                </ul>
+
+                <button
+                    class="order-btn"
+                    onclick="openCheckout('Paket Basic', 150000)">
+                    Pilih Paket
+                </button>
+
+            </div>
+
+
+            <div class="price-card recommended">
+
+                <div class="popular">REKOMENDASI</div>
+
+                <h3>Professional</h3>
+
+                <div class="price">
+                    Rp350K
+                </div>
+
+                <p>Untuk bisnis dan profesional.</p>
+
+                <ul>
+                    <li>✓ 3 desain</li>
+                    <li>✓ 5 kali revisi</li>
+                    <li>✓ File JPG, PNG & PDF</li>
+                    <li>✓ File source</li>
+                    <li>✓ Pengerjaan 2-4 hari</li>
+                </ul>
+
+                <button
+                    class="order-btn"
+                    onclick="openCheckout('Paket Professional', 350000)">
+                    Pilih Paket
+                </button>
+
+            </div>
+
+
+            <div class="price-card">
+
+                <h3>Business</h3>
+
+                <div class="price">
+                    Rp750K
+                </div>
+
+                <p>Untuk kebutuhan branding lengkap.</p>
+
+                <ul>
+                    <li>✓ Logo</li>
+                    <li>✓ Kartu nama</li>
+                    <li>✓ Banner</li>
+                    <li>✓ Social media kit</li>
+                    <li>✓ File source</li>
+                </ul>
+
+                <button
+                    class="order-btn"
+                    onclick="openCheckout('Paket Business', 750000)">
+                    Pilih Paket
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- KONTAK -->
+    <section id="kontak" class="contact">
+
+        <div>
+            <p class="section-label">HUBUNGI KAMI</p>
+
+            <h2>
+                Punya Ide Desain?
+                <span>Mari Diskusikan.</span>
+            </h2>
+
+            <p>
+                Hubungi kami untuk konsultasi mengenai kebutuhan desain
+                Anda.
+            </p>
+        </div>
+
+        <div class="contact-info">
+
+            <p>📱 WhatsApp: 0812-3456-7890</p>
+
+            <p>📧 Email: hello@pixelcraft.id</p>
+
+            <p>📍 Indonesia</p>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <div class="logo">
+            Pixel<span>Craft</span>
+        </div>
+
+        <p>
+            © 2026 Desain_Grafis_Im. Semua hak dilindungi.
+        </p>
+
+    </footer>
+
+
+    <!-- MODAL CHECKOUT -->
+    <div id="checkoutModal" class="modal">
+
+        <div class="modal-content">
+
+            <button class="close" onclick="closeCheckout()">
+                ×
+            </button>
+
+            <h2>Checkout</h2>
+
+            <p class="checkout-subtitle">
+                Lengkapi data pesanan Anda
+            </p>
+
+
+            <form id="checkoutForm">
+
+                <label>Nama Lengkap</label>
+
+                <input
+                    type="text"
+                    id="customerName"
+                    placeholder="Masukkan nama Anda"
+                    required
+                >
+
+
+                <label>Email</label>
+
+                <input
+                    type="email"
+                    id="customerEmail"
+                    placeholder="contoh@email.com"
+                    required
+                >
+
+
+                <label>Nomor WhatsApp</label>
+
+                <input
+                    type="tel"
+                    id="customerPhone"
+                    placeholder="08xxxxxxxxxx"
+                    required
+                >
+
+
+                <label>Detail Pesanan</label>
+
+                <textarea
+                    id="orderDetail"
+                    placeholder="Jelaskan kebutuhan desain Anda..."
+                    required
+                ></textarea>
+
+
+                <label>Metode Pembayaran</label>
+
+                <select id="paymentMethod" required>
+
+                    <option value="">
+                        -- Pilih Pembayaran --
+                    </option>
+
+                    <option value="Transfer Bank">
+                        Transfer Bank
+                    </option>
+
+                    <option value="QRIS">
+                        QRIS
+                    </option>
+
+                    <option value="E-Wallet">
+                        E-Wallet
+                    </option>
+
+                </select>
+
+
+                <div class="order-summary">
+
+                    <div>
+                        <span>Layanan</span>
+                        <strong id="selectedService">
+                            -
+                        </strong>
+                    </div>
+
+                    <div>
+                        <span>Total</span>
+                        <strong id="selectedPrice">
+                            Rp0
+                        </strong>
+                    </div>
+
+                </div>
+
+
+                <button
+                    type="submit"
+                    class="payment-btn">
+                    Lanjutkan Pembayaran
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+
+    <!-- MODAL SUKSES -->
+    <div id="successModal" class="modal">
+
+        <div class="success-content">
+
+            <div class="success-icon">
+                ✓
+            </div>
+
+            <h2>Pesanan Berhasil!</h2>
+
+            <p>
+                Pesanan Anda berhasil dibuat.
+            </p>
+
+            <p>
+                Silakan lakukan pembayaran sesuai metode
+                pembayaran yang dipilih.
+            </p>
+
+            <div class="payment-box">
+
+                <strong>Nomor Pesanan</strong>
+
+                <span id="orderNumber">
+                    PC-000000
+                </span>
+
+            </div>
+
+            <button
+                class="payment-btn"
+                onclick="closeSuccess()">
+                Selesai
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
